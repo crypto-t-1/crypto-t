@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <link rel="stylesheet" href="forgotpass.css">
+    <link rel="icon" href="CT.png">
+</head>
+<style>
+    body{
+        background-image: url(mail.webp);
+        background-repeat: no-repeat;
+    }
+</style>
+<body>
+    <div class="forgot-password-container">
+        <h2 style="color: aliceblue;">Forgot Password:</h2>
+        <p style="color: aliceblue;">Please enter your email address to reset your password.</p>
+        <form action="reset-password-link" method="POST">
+            <div class="input-group">
+                <label for="email" style="color: aliceblue;">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <button type="submit"><a href="sent.html">Send Reset Link</a></button>
+        </form>
+    </div>
+</body>
+</html>

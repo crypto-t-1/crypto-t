@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto-T</title>
+  <link rel="stylesheet" href="wallet.css">
+  <link rel="icon" href="CT.png">
+</head>
+<style>
+  body{
+    background-image: url(wallet3.png);
+    backdrop-filter: blur(2px);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+</style>
+<body>
+  <div class="container">
+    <h1>Crypto-T Wallet</h1>
+    <form id="transactionForm">
+      <label for="walletAddress"><b>Enter CT-ID</b></label><br>
+      <input type="text" id="walletAddress" name="walletAddress" required><br>
+      
+      <label for="amount"><b>Enter Password</b></label><br>
+      <input type="number" id="amount" name="amount" step="any" required><br>
+      
+      <button type="submit">Open Wallet</button>
+    </form>
+    <div id="message"></div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>
